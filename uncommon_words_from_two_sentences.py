@@ -21,3 +21,28 @@ Example 2:
 Input: A = "apple apple", B = "banana"
 Output: ["banana"]
 """
+def uncommonFromSentences(A, B):
+    wordCounts = {}
+    uncommonWords = []
+
+    for i in A.split(' '):
+        if i not in wordCounts:
+            wordCounts[i] = 1
+        else:
+            wordCounts[i] += 1
+
+    
+    for j in B.split(' '):
+        if j not in wordCounts:
+            wordCounts[j] = 1
+        else:
+            wordCounts[j] += 1
+    
+    for word in wordCounts:
+        if wordCounts[word] == 1:
+            uncommonWords.append(word)
+    return uncommonWords
+
+print(uncommonFromSentences("apple apple", "banana"))
+print(uncommonFromSentences("this apple is sweet", "this apple is sour"))
+
