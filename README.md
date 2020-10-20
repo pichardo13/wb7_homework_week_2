@@ -11,22 +11,21 @@
 * [Valid Sudoku](https://leetcode.com/problems/valid-sudoku) *works but not optimal solution*
 * [Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings)
 * [Word Pattern](https://leetcode.com/problems/word-pattern)
-* [Design Hashmap](https://leetcode.com/problems/design-hashmap) *passes cases but unsure if correct implementation*
-* [Design Hashset](https://leetcode.com/problems/design-hashset/)
+* [Design Hashmap](https://leetcode.com/problems/design-hashmap) *unsure of implementation*
+* [Design Hashset](https://leetcode.com/problems/design-hashset/) *have not started yet*
 
 ## Multiset: 
-*have not started*
-* [Find All Anagrams In a String](https://leetcode.com/problems/find-all-anagrams-in-a-string)
+* [Find All Anagrams In a String](https://leetcode.com/problems/find-all-anagrams-in-a-string) *skipping*
 * [Frist Unique Character In a String](https://leetcode.com/problems/first-unique-character-in-a-string)
 * [Subdomain Visit Count](https://leetcode.com/problems/subdomain-visit-count)
 * [Find the Difference](https://leetcode.com/problems/find-the-difference)
-* [Most Common Word](https://leetcode.com/problems/most-common-word)
-* [Sort Characters by Frequency](https://leetcode.com/problems/sort-characters-by-frequency)
-* [Set Mismatch](https://leetcode.com/problems/set-mismatch)
-* [Number of Atoms](https://leetcode.com/problems/number-of-atoms)
+* [Most Common Word](https://leetcode.com/problems/most-common-word) 
+* [Sort Characters by Frequency](https://leetcode.com/problems/sort-characters-by-frequency) 
+* [Set Mismatch](https://leetcode.com/problems/set-mismatch) *would like to optimize*
+* [Number of Atoms](https://leetcode.com/problems/number-of-atoms) *brainstormed, really hard*
 
 ## Tries:
 *have not started*
-* [Longest Word in a Dictionary](https://leetcode.com/problems/longest-word-in-dictionary)
-* [Implement Trie Prefix Tree](https://leetcode.com/problems/implement-trie-prefix-tree)
-* [Word Search](https://leetcode.com/problems/word-search-ii)
+* [Longest Word in a Dictionary](https://leetcode.com/problems/longest-word-in-dictionary) *have not started*
+* [Implement Trie Prefix Tree](https://leetcode.com/problems/implement-trie-prefix-tree) *have not started*
+* [Word Search](https://leetcode.com/problems/word-search-ii) *have not started*

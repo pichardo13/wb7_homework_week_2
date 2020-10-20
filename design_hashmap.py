@@ -25,10 +25,13 @@ class MyHashMap(object):
         """
         Initialize your data structure here.
         """
-        self.map = [None] * 10
-        
+        self.map = [-1] * 10
+    
     def print(self):
         print(self.map)
+
+    def hash_code(self, key):
+        return key
 
     def put(self, key, value):
         """
@@ -37,7 +40,7 @@ class MyHashMap(object):
         :type value: int
         :rtype: None
         """
-        self.map[key] = value
+        self.map[self.hash_code(key)] = value 
         
         
 
@@ -47,9 +50,8 @@ class MyHashMap(object):
         :type key: int
         :rtype: int
         """
-        if self.map[key]!= None:
-            return self.map[key]
-        return -1
+        
+        return self.map[self.hash_code(key)]
 
     def remove(self, key):
         """
@@ -57,20 +59,15 @@ class MyHashMap(object):
         :type key: int
         :rtype: None
         """
-        self.map[key] = None
+        self.map[self.hash_code(key)] = - 1
 
 hashMap = MyHashMap()
 hashMap.put(1,1)
-hashMap.print()
 hashMap.put(2,2)
-hashMap.print()
 print(hashMap.get(1))
 print(hashMap.get(3))
 hashMap.put(2,1)
-hashMap.print()
 print(hashMap.get(2))
 hashMap.remove(2)
 print(hashMap.get(2))
-hashMap.print()
-
 ##check if hashmap allows more than one value for each key
