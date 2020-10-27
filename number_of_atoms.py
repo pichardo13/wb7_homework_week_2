@@ -33,11 +33,13 @@ Output: "Be32"
 #step 3: if ')', get the next item as it should be a number
 #step 4: pop from stack, as poping add to the dictionary and multiply by number
 
-from collections import defaultdict
+##currently only passes 3/4 tests, does not pass test 3.
+
+# from collections import defaultdict
 def countOfAtoms(formula):
     l = len(formula)
     stack = []
-    atoms = defaultdict(int)
+    atoms = dict()
     i = 0 
     while i < l:
         j = i + 1
@@ -46,7 +48,10 @@ def countOfAtoms(formula):
                 j += 1
             elem = formula[i:j]
             if j == l or not formula[j].isdigit():
-                atoms[elem] += 1
+                if elem not in atoms:
+                    atoms[elem] = 1
+                else:
+                    atoms[elem] += 1
         elif formula[i].isdigit():
             while j < l and formula[j].isdigit():
                 j += 1
@@ -71,7 +76,16 @@ def countOfAtoms(formula):
                     atoms[elem] = num
                 else:
                     atoms[elem] *= num
-        i = j   
-    return atoms
+        i = j 
+    result = ''  
+    for k in sorted(atoms.keys()):
+        if atoms[k] > 1:
+            result += k + str(atoms[k])
+        else:
+            result += k
+    return result
 
-
+print(countOfAtoms("H2O"))
+print(countOfAtoms("Mg(OH)2"))
+print(countOfAtoms("K4(ON(SO3)2)2")) #does not pass test
+print(countOfAtoms("Be32"))

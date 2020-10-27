@@ -22,10 +22,9 @@
 * [Most Common Word](https://leetcode.com/problems/most-common-word) 
 * [Sort Characters by Frequency](https://leetcode.com/problems/sort-characters-by-frequency) 
 * [Set Mismatch](https://leetcode.com/problems/set-mismatch) *would like to optimize*
-* [Number of Atoms](https://leetcode.com/problems/number-of-atoms) *brainstormed, really hard*
+* [Number of Atoms](https://leetcode.com/problems/number-of-atoms) *passes 3/4 test*
 
 ## Tries:
-*have not started*
-* [Longest Word in a Dictionary](https://leetcode.com/problems/longest-word-in-dictionary) *have not started*
-* [Implement Trie Prefix Tree](https://leetcode.com/problems/implement-trie-prefix-tree) *have not started*
-* [Word Search](https://leetcode.com/problems/word-search-ii) *have not started*
+* [Longest Word in a Dictionary](https://leetcode.com/problems/longest-word-in-dictionary) *contains bug*
+* [Implement Trie Prefix Tree](https://leetcode.com/problems/implement-trie-prefix-tree) *small bug, but mostly finished*
+* [Word Search](https://leetcode.com/problems/word-search-ii) *wrote down steps to solve problems*
